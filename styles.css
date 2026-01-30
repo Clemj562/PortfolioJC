@@ -360,6 +360,23 @@ h2 {
   top: 2rem;
 }
 
+.titre-rotate2 {
+  background-color: var(--primary-color);
+  /* Ton rose #f2a2bc */
+  padding: 20px 35px;
+  border-radius: 25px;
+  transform: rotate(-8deg) translateY(-20px);
+  /* Incliné et décalé vers le haut */
+  font-size: 3rem !important;
+  display: inline-block;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  margin-left: 50px;
+  /* Décale pour chevaucher un peu le vert */
+  position: relative;
+  top: 2rem;
+  color: #a8c686;
+}
+
 /* Colonne de droite : texte et boutons */
 .content-box {
   max-width: 500px;
@@ -956,36 +973,112 @@ h2 {
   margin-bottom: 3rem;
   position: relative;
   z-index: 1;
+  margin-top: -6rem;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button[data-filtre="all"] {
+  background-color: transparent;
+  border: 3px solid #f2a2bc;
+  color: #f2a2bc;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button[data-filtre="graphisme"] {
+  background-color: transparent;
+  border: 3px solid #a8c686;
+  color: #a8c686;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button[data-filtre="web"] {
+  background-color: transparent;
+  border: 3px solid #f4c28b;
+  color: #f4c28b;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button[data-filtre="motion"] {
+  background-color: transparent;
+  border: 3px solid #b7d4f1;
+  color: #b7d4f1;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button:last-child {
+  background-color: transparent;
+  border: 3px solid #f6f1a2;
+  color: #f6f1a2;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button[data-filtre="all"]:hover {
+  background-color: #f2a2bc;
+  border: 3px solid #f2a2bc;
+  color: white;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button[data-filtre="graphisme"]:hover {
+  background-color: #a8c686;
+  border: 3px solid #a8c686;
+  color: white;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button[data-filtre="web"]:hover {
+  background-color: #f4c28b;
+  border: 3px solid #f4c28b;
+  color: white;
+  width: auto;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button[data-filtre="motion"]:hover {
+  background-color: #b7d4f1;
+  border: 3px solid #b7d4f1;
+  color: white;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-filtres button:last-child:hover {
+  background-color: #f6f1a2;
+  border: 3px solid #f6f1a2;
+  color: white;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .btn-filtres button {
   border-radius: 35px;
+  background-color: transparent;
   padding: 15px 35px;
-  border: none;
+  border: 3px solid;
   font-weight: bold;
   font-size: 22px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.btn-filtres button[data-filtre="all"] {
-  background-color: #f2a2bc;
-}
-
-.btn-filtres button[data-filtre="graphisme"] {
-  background-color: #a8c686;
-}
-
-.btn-filtres button[data-filtre="web"] {
-  background-color: #f4c28b;
-}
-
-.btn-filtres button[data-filtre="motion"] {
-  background-color: #b7d4f1;
-}
-
-.btn-filtres button:last-child {
-  background-color: #f6f1a2;
+.btn-filtres button:hover {
+  border-radius: 35px;
+  padding: 15px 35px;
+  border: 3px solid;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: white;
 }
 
 /* Grille des projets */
@@ -1350,13 +1443,9 @@ h2 {
   margin-top: 20rem;
 }
 
-#booster-left {
+#booster-left {}
 
-}
-
-#booster-right {
-
-}
+#booster-right {}
 
 #booster-left:hover,
 #booster-right:hover {
@@ -1366,20 +1455,27 @@ h2 {
 
 .boosters {
   display: flex;
-  overflow: hidden !important; /* interdit tout scroll sur le parent */
-  gap: 2rem; /* juste pour espacer les boosters */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  overflow: hidden !important;
+  /* interdit tout scroll sur le parent */
+  gap: 2rem;
+  /* juste pour espacer les boosters */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
 }
 
 /* Cacher les scrollbars dans tous les model-viewer */
 model-viewer {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
 }
 
 model-viewer::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
+  /* Chrome, Safari, Opera */
 }
 
 

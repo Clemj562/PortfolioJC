@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="custom-navbar" id="navbar">
+        <div class="logo">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" stroke="white" stroke-width="5" fill="none" />
+                <text x="50%" y="55%" text-anchor="middle" font-size="30" fill="white" font-family="Antonio">L</text>
+            </svg>
+        </div>
+
+        <ul class="nav-links">
+            <li class="antonio"><a href="#accueil">ACCUEIL</a></li>
+            <li class="antonio"><a href="#about">A PROPOS</a></li>
+            <li class="antonio"><a href="#projets">PROJETS</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="./content/CV_JegouClemence.pdf" download="CV_JegouClemence.pdf" class="btn-outline antonio">MON
+                CV</a>
+            <a href="./content/Portfolio_JegouClemence.pdf" download="Portfolio_JegouClemence.pdf"
+                class="btn-solid antonio">PORTFOLIO PDF</a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <section class="bloc bloc1">
+            <h1 class="anton-regular" style="font-size: 15rem;">PORTFOLIO</h1>
+        </section>
+
+        <section id="about" class="bloc bloc2">
+            <div class="bloc-about">
+                <h2>QUI SUIS</h2>
+                <h2 class="titre-rotate">JE ?</h2>
+            </div>
+            <div class="content-box">
+                <p>Etiam varius elit nec diam sagittis pretium. Curabitur volutpat quis quam ac tristique. <br>Nullam
+                    pellentesque porttitor dui, ac condimentum tellus hendrerit sit amet. Suspendisse diam leo, ornare
+                    non risus in, varius aliquam lectus.<br>PhaseEtiam varius elit nec diam sagittis pretium. Curabitur
+                    volutpat quis quam ac tristique. <br>Nullam pellentesque porttitor dui, ac condimentum tellus
+                    hendrerit sit amet. </p>
+                <a href="#projets">VOIR MES PROJETS</a>
+                <a href="./content/CV_JegouClemence.pdf" download="CV_JegouClemence.pdf">CV</a>
+            </div>
+        </section>
+    </div>
+
+    <header class="hero">
+        <h1>PORT<span>folio</span></h1>
+        <div class="year-badge">2026</div>
+    </header>
+
+    <section class="quote-section">
+        <p>"Creativity is intelligence having fun."</p>
+    </section>
+
+    <section id="skills">
+        <div style="display: flex; justify-content: center; margin-bottom: 4rem;">
+            <h2 class="anton-regular" style="font-size: 5rem;">COMPÉ</h2>
+            <h2 class="anton-regular" style="font-size: 5rem; color: #F49FBC;">TENCES</h2>
+        </div>
+
+        <!-- Boutons invisibles pour les clics -->
+
+        <section class="boosters">
+            <model-viewer id="booster-left" src="./content/BoosterPasModif.glb" camera-orbit="-90deg 0deg 5m"
+                min-camera-orbit="-90deg 0deg 5m" max-camera-orbit="-90deg 0deg 5m" orientation="0deg 0deg 15deg"
+                style="background: transparent;" interaction-prompt="none" disable-zoom bounds="tight">
+            </model-viewer>
+
+            <model-viewer id="booster-right" src="./content/BoosterPasModif.glb" camera-orbit="-90deg 0deg 5m"
+                min-camera-orbit="-90deg 0deg 5m" max-camera-orbit="-90deg 0deg 5m" orientation="0deg 0deg -15deg"
+                style="background: transparent;" interaction-prompt="none" disable-zoom bounds="tight">
+            </model-viewer>
+        </section>
+    </section>
+
+    <section class="pskills pskills-hide">
+        <div class="pskills-base"></div>
+        <div class="pskills-content">
+            <div class="contenu-pskills">
+                <img src="./media/img/GIP.jpg" alt="image du projet">
+                <div class="partiedroite">
+                    <div class="texte-pskills">
+                        <div class="titre-pskills">
+                            <h3 id="pskills-title">A L'WEST FEST</h3>
+                            <p id="categorie-pskills">CATEGORIE</p>
+                            <button class="pskillsquit">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pskills2 pskills-hide2">
+        <div class="pskills-base2"></div>
+        <div class="pskills-content2">
+            <div class="contenu-pskills2">
+                <img src="./media/img/GIP.jpg" alt="image du projet">
+                <div class="partiedroite">
+                    <div class="texte-pskills2">
+                        <div class="titre-pskills2">
+                            <h3 id="pskills-title2">A L'WEST FEST</h3>
+                            <p id="categorie-pskills2">CATEGORIE</p>
+                            <button class="pskillsquit2">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="CTA-stage">
+        <img src="papier-texture.jpg" alt="Texture papier" class="bg-image">
+        <h2>Pssst</h2>
+        <p>Je suis à la recherche d'un stage <br>en communication visuelle !</p>
+        <button>Plus d'infos en cliquant ici !</button>
+    </section>
+
+    <section id="experience" style="background-color: #343435;">
+        <div class="circle-decoration-right"></div>
+        <h2 class="anton-regular">PARCOURS</h2>
+        <div class="grid">
+            <div class="box">
+                <h3 class="anton-regular">FORMATIONS</h3>
+
+                <div class="formation-item">
+                    <h4 class="anton-regular">BUT Métiers du Multimédia et de l'Internet</h4>
+                    <p class="location antonio">IUT de Lannion - 22 300 Lannion</p>
+                    <ul>
+                        <li>Graphisme / Motion Design / 3D</li>
+                        <li>Design d'Expérience (UX / UI)</li>
+                        <li>Marketing / Communication</li>
+                    </ul>
+                </div>
+
+                <div class="formation-item">
+                    <h4 class="anton-regular">Baccalauréat général</h4>
+                    <p class="location antonio">Lycée René Cassin - 35 188 Montfort-Sur-Meu</p>
+                    <ul>
+                        <li>Spécialités SES et HGGSP</li>
+                        <li>Option Droit</li>
+                        <li>Projets de groupe</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3 class="anton-regular">EXPÉRIENCES</h3>
+
+                <div class="experience-item">
+                    <h4 class="anton-regular">Stage - à venir</h4>
+                    <p class="location antonio">?</p>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="anton-regular">Hôtesse de caisse</h4>
+                    <p class="location antonio">Centre Leclerc - 35 137 Pleumeleuc</p>
+                    <ul>
+                        <li>Relation et aide à la clientèle</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="passions" style="background-color: #343435;">
+        <div style="display: flex; justify-content: center; margin-bottom: 40px;">
+            <h2 class="anton-regular" style="font-size: 5rem;color: white;">PASS</h2>
+            <h2 class="anton-regular" style="font-size: 5rem; color: #F49FBC;">IONS</h2>
+        </div>
+        <div class="passions-container">
+            <div class="passion-circle"></div>
+            <div class="passion-circle"></div>
+            <div class="passion-circle"></div>
+        </div>
+    </section>
+
+    <section id="WIMB">
+        <img src="papier-texture.jpg" alt="Texture papier" class="bg-image">
+        <h2 class="anton-regular" style="font-size: 5rem;">WHAT'S IN</h2>
+        <h2 class="titre-rotate anton-regular">MY BAG ?</h2>
+        <div class="wimb-items">
+        </div>
+    </section>
+
+    <section id="projets">
+        <div class="titre">
+            <h2 class="anton-regular">PROJETS</h2>
+            <h2 class="titre-rotate anton-regular"></h2>
+        </div>
+        <div class="btn-filtres">
+            <button class="filtre active antonio" data-filtre="all">TOUS</button>
+            <button class="filtre antonio" data-filtre="graphisme">GRAPHISME</button>
+            <button class="filtre antonio" data-filtre="web">WEB</button>
+            <button class="filtre antonio" data-filtre="motion">3D</button>
+        </div>
+        <div id="section-projets" class="projets">
+            <p class="aucun-projet" style="display: none; text-align: center; margin-left: 0; margin-right: 0;">Aucun projet dans cette catégorie pour le moment.</p>
+
+            <div class="projet" id="1">
+                <div class="image-container">
+                    <img src="./content/alwestfest.jpg" alt="A l'West Fest">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">A L'WEST FEST</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">GRAPHISME</p>
+            </div>
+            <div class="projet" id="2">
+                <div class="image-container">
+                    <img src="./content/foodbox.jpg" alt="FoodBox">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">FOODBOX</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">GRAPHISME</p>
+            </div>
+            <div class="projet" id="3">
+                <div class="image-container">
+                    <img src="./content/ichiraku.jpg" alt="Ichiraku's Ramen">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">ICHIRAKU'S RAMEN</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">GRAPHISME</p>
+            </div>
+            <div class="projet" id="4">
+                <div class="image-container">
+                    <img src="./content/alwestfest.jpg" alt="A l'West Fest">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">POKEMANIA</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">UI-UX</p>
+            </div>
+            <div class="projet" id="5">
+                <div class="image-container">
+                    <img src="./content/foodbox.jpg" alt="FoodBox">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">PROJET 5</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">WEB</p>
+            </div>
+            <div class="projet" id="6">
+                <div class="image-container">
+                    <img src="./content/ichiraku.jpg" alt="Ichiraku's Ramen">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">POKEMANIA</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">UI-UX</p>
+            </div>
+            <div class="projet" id="7">
+                <div class="image-container">
+                    <img src="./content/IAETENVIR.jpg" alt="IA et Environnement">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">IA ET ENVIRONNEMENT</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">GRAPHISME</p>
+            </div>
+            <div class="projet" id="8">
+                <div class="image-container">
+                    <img src="./content/foodbox.jpg" alt="FoodBox">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">ESSAI</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">WEB</p>
+            </div>
+            <div class="projet" id="9">
+                <div class="image-container">
+                    <img src="./content/ichiraku.jpg" alt="Ichiraku's Ramen">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">PROJET 9</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">3D</p>
+            </div>
+        </div>
+        <button class="confirm">En voir +</button>
+    </section>
+
+    <section class="popup popup-hide">
+        <div class="popup-base"></div>
+        <div class="popup-content">
+            <div class="contenu-popup">
+                <img src="./media/img/GIP.jpg" alt="image du projet">
+                <div class="partiedroite">
+                    <div class="texte-popup">
+                        <div class="titre">
+                            <h3 id="popup-title">A L'WEST FEST</h3>
+                            <p id="categorie-popup">CATEGORIE</p>
+                            <button class="popupquit">X</button>
+                        </div>
+                        <p id="popup-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                            tempor dui metus.
+                            Pellentesque vel nisi elementum.</p>
+                        <h5 class="titredspopup">MISSIONS</h5>
+                        <p id="popup-texteB">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                            tempor dui metus.
+                            Pellentesque vel nisi elementum.</p>
+                        <h5 class="titredspopup">COMPETENCES</h5>
+                        <div id="popup-skills" class="competences">
+                        </div>
+                        <h5 class="titredspopup">MOTS-CLES</h5>
+                        <div id="popup-motscles" class="mots-cles">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact">
+        <div class="contact-content">
+            <h2 class="anton-regular">CONTACTEZ-<span>MOI !</span></h2>
+
+            <p>
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+                ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem
+            </p>
+
+            <div class="socials">
+                <a href="#" class="btn antonio">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="#" class="btn antonio">
+                    <i class="fa-brands fa-discord"></i> Discord
+                </a>
+                <a href="#" class="btn antonio">
+                    <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                </a>
+            </div>
+
+            <div class="contact-infos">
+                <div class="btn antonio">
+                    <i class="fa-solid fa-envelope"></i>
+                    clemence.jegou@etudiant.univ-rennes.fr
+                </div>
+                <div class="btn antonio">
+                    <i class="fa-solid fa-phone"></i>
+                    06 71 31 20 57
+                </div>
+            </div>
+        </div>
+
+        <div class="decor">
+            <span class="circle c1"></span>
+            <span class="circle c2"></span>
+            <span class="circle c3"></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

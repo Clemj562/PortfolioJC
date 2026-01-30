@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="projets.css">
+</head>
+
+<body>
+
+    <section id="projets">
+        <div class="titre">
+            <h2 class="anton-regular">PROJETS</h2>
+        </div>
+        <div class="btn-filtres">
+            <button class="filtre active antonio" data-filtre="all">TOUS</button>
+            <button class="filtre antonio" data-filtre="graphisme">GRAPHISME</button>
+            <button class="filtre antonio" data-filtre="web">WEB</button>
+            <button class="filtre antonio" data-filtre="motion">3D</button>
+        </div>
+        <div id="section-projets" class="projets">
+            <p class="aucun-projet" style="display: none;">Aucun projet dans cette catégorie pour le moment.</p>
+
+            <div class="projet" id="1">
+                <div class="image-container">
+                    <img src="./content/alwestfest.jpg" alt="A l'West Fest">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">A L'WEST FEST</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">GRAPHISME</p>
+            </div>
+            <div class="projet" id="2">
+                <div class="image-container">
+                    <img src="./content/foodbox.jpg" alt="FoodBox">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">FOODBOX</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">WEB</p>
+            </div>
+            <div class="projet" id="3">
+                <div class="image-container">
+                    <img src="./content/ichiraku.jpg" alt="Ichiraku's Ramen">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">ICHIRAKU'S RAMEN</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">3D</p>
+            </div>
+            <div class="projet" id="4">
+                <div class="image-container">
+                    <img src="./content/alwestfest.jpg" alt="A l'West Fest">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">PROJET 4</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">GRAPHISME</p>
+            </div>
+            <div class="projet" id="5">
+                <div class="image-container">
+                    <img src="./content/foodbox.jpg" alt="FoodBox">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">PROJET 5</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">WEB</p>
+            </div>
+            <div class="projet" id="6">
+                <div class="image-container">
+                    <img src="./content/ichiraku.jpg" alt="Ichiraku's Ramen">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">PROJET 6</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">3D</p>
+            </div>
+            <div class="projet" id="7">
+                <div class="image-container">
+                    <img src="./content/alwestfest.jpg" alt="A l'West Fest">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">PROJET 7</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">GRAPHISME</p>
+            </div>
+            <div class="projet" id="8">
+                <div class="image-container">
+                    <img src="./content/foodbox.jpg" alt="FoodBox">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">PROJET 8</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">WEB</p>
+            </div>
+            <div class="projet" id="9">
+                <div class="image-container">
+                    <img src="./content/ichiraku.jpg" alt="Ichiraku's Ramen">
+                    <div class="btn-plus">+</div>
+                </div>
+                <h1 class="anton-regular">PROJET 9</h1>
+                <p class="date-lieu antonio">IUT DE LANNION - JUIN 2025</p>
+                <p class="categorie antonio">3D</p>
+            </div>
+        </div>
+        <button class="confirm">En voir +</button>
+    </section>
+
+    <section class="popup popup-hide">
+        <div class="popup-base"></div>
+        <div class="popup-content">
+            <div class="contenu-popup">
+                <img src="./media/img/GIP.jpg" alt="image du projet">
+                <div class="partiedroite">
+                    <div class="texte-popup">
+                        <div class="titre">
+                            <h3 id="popup-title">A L'WEST FEST</h3>
+                            <button class="popupquit">X</button>
+                        </div>
+                        <p id="popup-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                            tempor dui metus.
+                            Pellentesque vel nisi elementum.</p>
+                        <h5>MISSIONS</h5>
+                        <p id="popup-texteB">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                            tempor dui metus.
+                            Pellentesque vel nisi elementum.</p>
+                        <h5>OUTILS</h5>
+                        <div id="popup-outils" class="outilsP">
+                            <img src="#" alt="logiciel">
+                            <img src="#" alt="logiciel">
+                            <img src="#" alt="logiciel">
+                        </div>
+                        <h5>SAVOIR-ÊTRE</h5>
+                        <div id="popup-savoirêtre" class="savoir-être">
+                            <img src="#" alt="logiciel">
+                            <img src="#" alt="logiciel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const bloc2 = document.querySelector('.bloc2');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const viewportH = window.innerHeight;
+            const progress = Math.min(scrollY / viewportH, 1);
+            bloc2.style.transform = `translateY(${100 - progress * 100}%)`;
+        });
+
+        const projets = document.querySelectorAll('.projet');
+        const popup = document.querySelector('.popup');
+        const popupquit = document.querySelector('.popupquit');
+        const touslesbutton = document.querySelector('.touslesbutton');
+        const messageAucunProjet = document.querySelector('.aucun-projet');
+
+        // ===== SYSTÈME DE FILTRAGE =====
+        const filtres = document.querySelectorAll('.filtre');
+
+        filtres.forEach(filtre => {
+            filtre.addEventListener('click', function () {
+                filtres.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                const filtreValue = this.getAttribute('data-filtre');
+                visible = 6;
+                let count = 0;
+
+                projets.forEach(projet => {
+                    const categorieTexte = projet.querySelector('.categorie').textContent.toLowerCase();
+
+                    if (filtreValue === 'all') {
+                        if (count < visible) {
+                            projet.style.display = 'block';
+                        } else {
+                            projet.style.display = 'none';
+                        }
+                        count++;
+                    } else if (categorieTexte.includes(filtreValue)) {
+                        if (count < visible) {
+                            projet.style.display = 'block';
+                        } else {
+                            projet.style.display = 'none';
+                        }
+                        count++;
+                    } else {
+                        projet.style.display = 'none';
+                    }
+                });
+
+                // Gérer l'affichage du message "Aucun projet"
+                const projetsVisibles = Array.from(projets).filter(p => {
+                    if (filtreValue === 'all') return true;
+                    const cat = p.querySelector('.categorie').textContent.toLowerCase();
+                    return cat.includes(filtreValue);
+                });
+
+                if (projetsVisibles.length === 0) {
+                    messageAucunProjet.style.display = 'block';
+                    btn.style.display = 'none';
+                } else {
+                    messageAucunProjet.style.display = 'none';
+                    if (projetsVisibles.length <= visible) {
+                        btn.style.display = 'none';
+                    } else {
+                        btn.style.display = 'block';
+                    }
+                }
+            });
+        });
+        // ===== FIN SYSTÈME DE FILTRAGE =====
+
+        projets.forEach(projet => {
+            projet.addEventListener('click', () => {
+                let titreValue = "";
+                let imageUrl = "";
+                let textValue = "";
+                let textBValue = "";
+                let outilsValue = "";
+                let savoirêtreValue = "";
+
+                let titre = document.getElementById("popup-title");
+                let image = document.querySelector(".popup-content img");
+                let text = document.getElementById("popup-texte");
+                let textB = document.getElementById("popup-texteB");
+                let outils = document.getElementById("popup-outils");
+                let savoirêtre = document.getElementById("popup-savoirêtre");
+
+                popup.classList.remove('popup-hide');
+                popup.classList.add('popup-show');
+
+                switch (projet.id) {
+                    case "1":
+                        titreValue = "À L'WEST FEST";
+                        imageUrl = "./content/alwestfest.jpg";
+                        textValue = " Dans le cadre d'un projet au sein de ma formation, j'ai dû réaliser une communication visuelle, sous la forme d'une affiche. afin d'annoncer l'organisation de la seconde édition du festival 'À l'West Fest', organisé par l'IUT afin de promouvoir les travaux des étudiants MMI de Lannion.";
+                        textBValue = "J'ai d'abord fait une sélection d'affiches existantes puis, avec mon équipe, nous avons mis nos idées en commun et réalisé notre affiche selon une direction artistique choisie.";
+                        outilsValue = "?";
+                        savoirêtreValue = "?";
+                        break;
+                    case "2":
+                        titreValue = "FOODBOX";
+                        imageUrl = "./media/img/AfficheSae106.jpg";
+                        textValue = " Dans le cadre d'un projet au sein de ma formation, j'ai dû réaliser une communication visuelle, sous la forme d'une affiche.  En effet, nous devions présenter un projet, une solution, en lien avec l'ODD 'Faim Zéro'. Par conséquent, nous avons opté pour une boîte alimentaire, que j'ai donc représenté ici.";
+                        textBValue = "Avec mon équipe de projet, nous avons dans un premier temps mis nos idées en commun puis j'ai réalisé un brouillon pour voir plus facilement le rendu, avant de commencer la version finale sur Affinity.";
+                        outilsValue = "?";
+                        savoirêtreValue = "?";
+                        break;
+                    case "3":
+                        titreValue = "ICHIRAKU'S RAMEN";
+                        imageUrl = "./content/ichiraku.jpg";
+                        textValue = " Dans le cadre d'un projet personnel, j'ai réalisé une affiche inspirée de l'univers de Naruto, dans lequel un plat possède une place importante: Les Ramen. C'est pour cela que j'ai décidé de les représenter au centre de mon affiche, où j'ai souhaité montrer mon style graphique.";
+                        textBValue = "J'ai d'abord fait des recherches sur l'application Pinterest afin de m'inspirer. Par la suite j'ai réalisé le brouillon de l'affiche pour visualiser le rendu, avant de commencer la version finale sur Affinity Designer";
+                        outilsValue = "?";
+                        savoirêtreValue = "?";
+                        break;
+                    case "4":
+                        titreValue = "POKEMANIA";
+                        imageUrl = "./media/img/pokemania.png";
+                        textValue = "Dans le cadre d'un projet au sein de ma formation, j'ai dû réaliser un site web basé sur l'univers de Pokémon. En effet, nous devions permettre à l'utilisateur de collectionner ces derniers. J'ai donc réalisé avant tout le design du site, tout en lui donnant un nom : 'Pokémania'.";
+                        textBValue = "J'ai d'abord réalisé une planche univers afin de déterminer le visuel du site puis en me basant sur mon wireframe et mon mockup, j'ai commencé à réaliser ce dernier sur VsCode.";
+                        outilsValue = "?";
+                        savoirêtreValue = "?";
+                        break;
+                    case "5":
+                        titreValue = "À venir !"
+                        textValue = "?";
+                        textBValue = "?";
+                        outilsValue = "?";
+                        savoirêtreValue = "?";
+                        break;
+                    case "6":
+                        titreValue = "À venir !"
+                        textValue = "?";
+                        textBValue = "?";
+                        outilsValue = "?";
+                        savoirêtreValue = "?";
+                        break;
+                }
+
+                if (titre) titre.innerText = titreValue;
+                if (text) text.innerText = textValue;
+                if (textB) textB.innerText = textBValue;
+                if (outils) outils.innerText = outilsValue;
+                if (savoirêtre) savoirêtre.innerText = savoirêtreValue;
+                if (image) image.setAttribute("src", imageUrl);
+            });
+        });
+
+        function fermerPopup() {
+            popup.classList.remove('popup-show');
+            popup.classList.add('popup-hide');
+        }
+
+        popupquit.addEventListener('click', fermerPopup);
+
+        popup.addEventListener('click', (e) => {
+            if (e.target.classList.contains('popup') || e.target.classList.contains('popup-base')) {
+                fermerPopup();
+            }
+        });
+
+        const popupContent = document.querySelector('.popup-content');
+        if (popupContent) {
+            popupContent.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+
+        function selectCategory(button) {
+            document.querySelectorAll('.touslesbutton button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            button.classList.add('active');
+        }
+
+        const sectionprojets = document.querySelectorAll("#section-projets > div");
+        const btn = document.querySelector(".confirm");
+        let visible = 6;
+
+        // Affichage initial
+        sectionprojets.forEach((p, i) => {
+            if (i >= visible) p.style.display = "none";
+        });
+
+        // S'il y a 6 projets ou moins → pas de bouton
+        if (sectionprojets.length <= visible) {
+            btn.style.display = "none";
+        }
+
+        btn.addEventListener("click", () => {
+            const filtreActif = document.querySelector('.filtre.active').getAttribute('data-filtre');
+
+            const projetsCorrespondants = Array.from(projets).filter(p => {
+                if (filtreActif === 'all') return true;
+                const cat = p.querySelector('.categorie').textContent.toLowerCase();
+                return cat.includes(filtreActif);
+            });
+
+            let count = 0;
+            projets.forEach(projet => {
+                const cat = projet.querySelector('.categorie').textContent.toLowerCase();
+                const correspond = filtreActif === 'all' || cat.includes(filtreActif);
+
+                if (correspond && projet.style.display === 'none' && count < 6) {
+                    projet.style.display = 'block';
+                    count++;
+                }
+            });
+
+            visible += 6;
+
+            const projetsCaches = projetsCorrespondants.filter(p => p.style.display === 'none');
+            if (projetsCaches.length === 0) {
+                btn.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

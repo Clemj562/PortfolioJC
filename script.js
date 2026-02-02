@@ -94,7 +94,7 @@ projets.forEach(projet => {
         switch (projet.id) {
             case "1":
                 titreValue = "À L'WEST FEST";
-                imageUrl = "./content/alwestfest.jpg";
+                imageUrl = "./contents/imgs/alwestfest.jpg";
                 textValue = " Dans le cadre d'un projet au sein de ma formation, j'ai dû réaliser une communication visuelle, sous la forme d'une affiche. afin d'annoncer l'organisation de la seconde édition du festival 'À l'West Fest', organisé par l'IUT afin de promouvoir les travaux des étudiants MMI de Lannion.";
                 textBValue = "J'ai d'abord fait une sélection d'affiches existantes puis, avec mon équipe, nous avons mis nos idées en commun et réalisé notre affiche selon une direction artistique choisie.";
                 outilsValue = "?";
@@ -104,7 +104,7 @@ projets.forEach(projet => {
                 break;
             case "2":
                 titreValue = "FOODBOX";
-                imageUrl = "./media/img/AfficheSae106.jpg";
+                imageUrl = "./contents/imgs/foodbox.jpg";
                 textValue = " Dans le cadre d'un projet au sein de ma formation, j'ai dû réaliser une communication visuelle, sous la forme d'une affiche.  En effet, nous devions présenter un projet, une solution, en lien avec l'ODD 'Faim Zéro'. Par conséquent, nous avons opté pour une boîte alimentaire, que j'ai donc représenté ici.";
                 textBValue = "Avec mon équipe de projet, nous avons dans un premier temps mis nos idées en commun puis j'ai réalisé un brouillon pour voir plus facilement le rendu, avant de commencer la version finale sur Affinity.";
                 outilsValue = "?";
@@ -114,7 +114,7 @@ projets.forEach(projet => {
                 break;
             case "3":
                 titreValue = "ICHIRAKU'S RAMEN";
-                imageUrl = "./content/ichiraku.jpg";
+                imageUrl = "./contents/imgs/ichiraku.jpg";
                 textValue = " Dans le cadre d'un projet personnel, j'ai réalisé une affiche inspirée de l'univers de Naruto, dans lequel un plat possède une place importante: Les Ramen. C'est pour cela que j'ai décidé de les représenter au centre de mon affiche, où j'ai souhaité montrer mon style graphique.";
                 textBValue = "J'ai d'abord fait des recherches sur l'application Pinterest afin de m'inspirer. Par la suite j'ai réalisé le brouillon de l'affiche pour visualiser le rendu, avant de commencer la version finale sur Affinity Designer";
                 outilsValue = "?";
@@ -124,7 +124,7 @@ projets.forEach(projet => {
                 break;
             case "4":
                 titreValue = "POKEMANIA";
-                imageUrl = "./media/img/pokemania.png";
+                imageUrl = "./contents/imgs/alwestfest.jpg";
                 textValue = "Dans le cadre d'un projet au sein de ma formation, j'ai dû réaliser un site web basé sur l'univers de Pokémon. En effet, nous devions permettre à l'utilisateur de collectionner ces derniers. J'ai donc réalisé avant tout le design du site, tout en lui donnant un nom : 'Pokémania'.";
                 textBValue = "J'ai d'abord réalisé une planche univers afin de déterminer le visuel du site puis en me basant sur mon wireframe et mon mockup, j'ai commencé à réaliser ce dernier sur VsCode.";
                 outilsValue = "?";
@@ -135,6 +135,7 @@ projets.forEach(projet => {
             case "5":
             case "6":
                 titreValue = "À venir !";
+                imageUrl = "./contents/imgs/ichiraku.jpg";
                 textValue = "?";
                 textBValue = "?";
                 outilsValue = "?";
@@ -144,7 +145,7 @@ projets.forEach(projet => {
                 break;
             case "7":
                 titreValue = "IA ET ENVIRONNEMENT";
-                imageUrl = "./content/IAETENVIR.jpg";
+                imageUrl = "./contents/imgs/IAETENVIR.jpg";
                 textValue = "Création d'une infographie pour la Fête de la Science afin de sensibiliser aux dommages environnementaux causés par l'intelligence artificielle.";
                 textBValue = "?";
                 outilsValue = "?";
@@ -154,13 +155,23 @@ projets.forEach(projet => {
                 break;
             case "8":
                 titreValue = "ESSAI";
-                imageUrl = "./content/IAETENVIR.jpg";
+                imageUrl = "./contents/imgs/IAETENVIR.jpg";
                 textValue = "Création d'une infographie pour la Fête de la Science afin de sensibiliser aux dommages environnementaux causés par l'intelligence artificielle.";
                 textBValue = "?";
                 outilsValue = "?";
                 savoirêtreValue = "?";
                 categorieValue = "GRAPHISME";
                 categorieColor = "#9886c6ff";
+                break;
+            default:
+                titreValue = "PROJET INCONNU";
+                imageUrl = "./contents/imgs/ichiraku.jpg";
+                textValue = "Désolé, les informations concernant ce projet sont indisponibles.";
+                textBValue = "";
+                outilsValue = "";
+                savoirêtreValue = "";
+                categorieValue = "";
+                categorieColor = "#999999";
                 break;
         }
 

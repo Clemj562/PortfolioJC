@@ -1733,3 +1733,7 @@ model-viewer {
   pointer-events: auto;
   z-index: 5;
 }
+
+i:not(footer i) {
+  margin-right: 0.5em;
+}

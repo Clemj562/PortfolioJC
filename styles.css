@@ -46,7 +46,7 @@ model-viewer::part(canvas) {
 .container {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 150vh;
   overflow: hidden;
 }
 
@@ -335,7 +335,6 @@ h2 {
 
 #about h2 {
   font-family: 'Anton', sans-serif;
-  font-size: 5rem;
   color: #a8c686;
   /* Ton vert pastel */
   margin: 0;
@@ -351,13 +350,13 @@ h2 {
   border-radius: 25px;
   transform: rotate(-8deg) translateY(-20px);
   /* Incliné et décalé vers le haut */
-  font-size: 3rem !important;
   display: inline-block;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
   margin-left: 50px;
   /* Décale pour chevaucher un peu le vert */
   position: relative;
   top: 2rem;
+  font-size: 2rem;
 }
 
 .titre-rotate2 {
@@ -367,7 +366,7 @@ h2 {
   border-radius: 25px;
   transform: rotate(-8deg) translateY(-20px);
   /* Incliné et décalé vers le haut */
-  font-size: 3rem !important;
+  font-size: 3rem;
   display: inline-block;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
   margin-left: 50px;
@@ -389,6 +388,7 @@ h2 {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 30px;
+  width: 38rem;
 }
 
 /* Boutons Outline de cette section */
@@ -1732,4 +1732,38 @@ model-viewer {
   cursor: pointer;
   pointer-events: auto;
   z-index: 5;
+}
+
+.passions-container {
+  display: flex;
+  justify-content: center;
+}
+
+.passions-container svg {
+  overflow: visible;
+  max-width: 100%;
+}
+
+.cercle-group {
+  cursor: pointer;
+}
+
+.cercle-base {
+  transition: r 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cercle-contour {
+  fill: none;
+  stroke-width: 6;
+  opacity: 0;
+  transition: r 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease;
+}
+
+.cercle-group:hover .cercle-base {
+  r: 110;
+}
+
+.cercle-group:hover .cercle-contour {
+  opacity: 1;
 }

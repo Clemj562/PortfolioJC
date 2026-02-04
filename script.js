@@ -560,3 +560,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(target);
 });
+
+const avatar = document.getElementById('avatar');
+
+avatar.addEventListener('mouseenter', () => {
+  const style = getComputedStyle(avatar);
+  const matrix = new DOMMatrix(style.transform);
+  const currentAngle = Math.atan2(matrix.m12, matrix.m11) * (180 / Math.PI);
+
+  avatar.style.animation = 'none';
+  avatar.style.transform = `rotate(${currentAngle}deg)`;
+});
+
+avatar.addEventListener('mouseleave', () => {
+  avatar.style.transform = '';
+  avatar.style.animation = '';
+});

@@ -80,6 +80,11 @@ body {
   width: 100%;
 }
 
+.logo svg {
+  width: 50px;
+  height: 50px;
+}
+
 .custom-navbar {
   display: flex;
   align-items: center;
@@ -97,6 +102,7 @@ body {
   z-index: 1000;
   background: transparent;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
 }
 
 /* --- État Scrolled (Bulle centrée) --- */
@@ -104,10 +110,10 @@ body {
   margin: 15px auto;
   max-width: 950px;
   /* Ajuste selon tes préférences */
-  width: 90%;
+  width: 80%;
   background: white;
-  border-radius: 60px;
-  padding: 10px 30px;
+  border-radius: 100px;
+  padding: 10px 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -388,7 +394,7 @@ h2 {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 30px;
-  width: 38rem;
+  width: 42rem;
 }
 
 /* Boutons Outline de cette section */
@@ -1766,4 +1772,19 @@ model-viewer {
 
 .cercle-group:hover .cercle-contour {
   opacity: 1;
+}
+
+#avatar{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 18rem;
+  top: 5rem;
+  animation: basculer 2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes basculer {
+  0%, 100% { transform: rotate(-8deg); }
+  50%      { transform: rotate(8deg); }
 }

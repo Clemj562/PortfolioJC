@@ -46,7 +46,7 @@ model-viewer::part(canvas) {
 .container {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 150vh;
   overflow: hidden;
 }
 
@@ -80,6 +80,11 @@ body {
   width: 100%;
 }
 
+.logo svg {
+  width: 50px;
+  height: 50px;
+}
+
 .custom-navbar {
   display: flex;
   align-items: center;
@@ -97,6 +102,7 @@ body {
   z-index: 1000;
   background: transparent;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
 }
 
 /* --- État Scrolled (Bulle centrée) --- */
@@ -104,10 +110,10 @@ body {
   margin: 15px auto;
   max-width: 950px;
   /* Ajuste selon tes préférences */
-  width: 90%;
+  width: 80%;
   background: white;
-  border-radius: 60px;
-  padding: 10px 30px;
+  border-radius: 100px;
+  padding: 10px 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -335,7 +341,6 @@ h2 {
 
 #about h2 {
   font-family: 'Anton', sans-serif;
-  font-size: 5rem;
   color: #a8c686;
   /* Ton vert pastel */
   margin: 0;
@@ -351,13 +356,13 @@ h2 {
   border-radius: 25px;
   transform: rotate(-8deg) translateY(-20px);
   /* Incliné et décalé vers le haut */
-  font-size: 3rem !important;
   display: inline-block;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
   margin-left: 50px;
   /* Décale pour chevaucher un peu le vert */
   position: relative;
   top: 2rem;
+  font-size: 2rem;
 }
 
 .titre-rotate2 {
@@ -367,7 +372,7 @@ h2 {
   border-radius: 25px;
   transform: rotate(-8deg) translateY(-20px);
   /* Incliné et décalé vers le haut */
-  font-size: 3rem !important;
+  font-size: 3rem;
   display: inline-block;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
   margin-left: 50px;
@@ -389,6 +394,7 @@ h2 {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 30px;
+  width: 42rem;
 }
 
 /* Boutons Outline de cette section */

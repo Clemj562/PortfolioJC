@@ -133,6 +133,15 @@ projets.forEach(projet => {
                 categorieColor = "#d9ebf9";
                 break;
             case "5":
+                titreValue = "POKEMANIA";
+                imageUrl = "./contents/imgs/alwestfest.jpg";
+                textValue = "Dans le cadre d'un projet au sein de ma formation, j'ai dû réaliser un site web basé sur l'univers de Pokémon. En effet, nous devions permettre à l'utilisateur de collectionner ces derniers. J'ai donc réalisé avant tout le design du site, tout en lui donnant un nom : 'Pokémania'.";
+                textBValue = "J'ai d'abord réalisé une planche univers afin de déterminer le visuel du site puis en me basant sur mon wireframe et mon mockup, j'ai commencé à réaliser ce dernier sur VsCode.";
+                outilsValue = "?";
+                savoirêtreValue = "?";
+                categorieValue = "UI-UX";
+                categorieColor = "#d9ebf9";
+                break;
             case "6":
                 titreValue = "À venir !";
                 imageUrl = "./contents/imgs/ichiraku.jpg";
@@ -495,3 +504,75 @@ if (pskills2) {
 }
 
 // ===== FIN SYSTÈME DE POPUP COMPÉTENCES =====
+
+// À ajouter dans votre script.js (ou dans un nouveau fichier)
+
+document.addEventListener("DOMContentLoaded", () => {
+  const target = document.getElementById("typewriter-text");
+
+  // Texte organisé en paragraphes séparés par une ligne vide
+  const paragraphs = [
+    "Et maintenant, la suite ne demande qu'à être créée."
+  ];
+
+  // On fusionne tout en une seule chaîne avec \n\n entre chaque paragraphe
+  const fullText = paragraphs.join("\n\n");
+
+  let index = 0;
+  let animationStarted = false;
+
+  // Délai entre chaque caractère en ms
+  const SPEED = 30;
+  // Pause supplémentaire entre les paragraphes en ms
+  const PAUSE_BETWEEN_PARAGRAPHS = 400;
+
+  function typeNextChar() {
+    if (index >= fullText.length) return; // fin du texte
+
+    const char = fullText[index];
+    index++;
+
+    // On détecte une séparation de paragraphe (\n\n)
+    if (char === "\n" && fullText[index] === "\n") {
+      target.innerHTML += "<br><br>";
+      index++; // on saute le second \n
+      setTimeout(typeNextChar, PAUSE_BETWEEN_PARAGRAPHS);
+    } else {
+      // Caractère normal — on échappe le HTML pour éviter les injections
+      target.innerHTML += char === " " ? " " : char;
+      setTimeout(typeNextChar, SPEED);
+    }
+  }
+
+  // IntersectionObserver : l'animation se lance dès que le <p> est visible
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !animationStarted) {
+          animationStarted = true;
+          observer.unobserve(target); // on ne lance qu'une seule fois
+          typeNextChar();
+        }
+      });
+    },
+    { threshold: 0.3 } // se déclenche à 30 % de visibilité
+  );
+
+  observer.observe(target);
+});
+
+const avatar = document.getElementById('avatar');
+
+avatar.addEventListener('mouseenter', () => {
+  const style = getComputedStyle(avatar);
+  const matrix = new DOMMatrix(style.transform);
+  const currentAngle = Math.atan2(matrix.m12, matrix.m11) * (180 / Math.PI);
+
+  avatar.style.animation = 'none';
+  avatar.style.transform = `rotate(${currentAngle}deg)`;
+});
+
+avatar.addEventListener('mouseleave', () => {
+  avatar.style.transform = '';
+  avatar.style.animation = '';
+});
